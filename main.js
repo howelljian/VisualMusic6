@@ -148,6 +148,7 @@ function gotResults(error, results)
 
   }
 }
+  }
   
     sleep(200);
 
@@ -163,7 +164,7 @@ function gotResults(error, results)
   }
   
   
-}
+
   }
 
 
