@@ -1,6 +1,16 @@
 var note = 0;
 var prevnote = 0;
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+
 function Start()
 {
     navigator.mediaDevices.getUserMedia({audio:true});
@@ -136,8 +146,8 @@ function gotResults(error, results)
   }
 }
   
-  setTimeout(1000);
- 
+sleep(200);
+
 
   note="";
   
