@@ -35,9 +35,14 @@ function gotResults(error, results)
   }
   if(results.length > 0.5)
   {
+    if(note =="Background Noise")
+  {
+    document.getElementById("canvas").style.backgroundColor = "black";
+    document.getElementById("note").innerHTML = "Background Noise";
+    console.log("Background Noise");
+    prevnote = "Background Noise";
+  }
    
-    
-    
     if(prevnote != note)
     {
     navigator.vibrate(2000);
