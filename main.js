@@ -136,7 +136,7 @@ function gotResults(error, results)
   }
 }
   
-  setTimeout(100);
+  setTimeout(1000);
  
 
   note="";
