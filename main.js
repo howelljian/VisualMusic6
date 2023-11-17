@@ -35,6 +35,9 @@ function gotResults(error, results)
   }
   if(results.length > 0.5)
   {
+    if(note !="Background Noise")
+    {
+    
     if(prevnote != note)
     {
     navigator.vibrate(2000);
@@ -153,6 +156,7 @@ sleep(200);
   
   
 }
+  }
 }
 
 function Back()
