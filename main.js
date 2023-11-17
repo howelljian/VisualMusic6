@@ -35,8 +35,8 @@ function gotResults(error, results)
   }
   if(results.length > 0.5)
   {
-    if(note !="Background Noise")
-    {
+   
+    
     
     if(prevnote != note)
     {
@@ -149,15 +149,23 @@ function gotResults(error, results)
   }
 }
   
-sleep(200);
+    sleep(200);
 
 
   note="";
+
+  if(note =="Background Noise")
+  {
+    document.getElementById("canvas").style.backgroundColor = "black";
+    document.getElementById("note").innerHTML = "Background Noise";
+    console.log("Background Noise");
+    prevnote = "Background Noise";
+  }
   
   
 }
   }
-}
+
 
 function Back()
 {
